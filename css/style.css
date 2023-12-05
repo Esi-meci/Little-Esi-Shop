@@ -1,30 +1,52 @@
-html{
-    font-size: 22px;
-    max-height: 100vh;
-    background-color: rgb(255, 255, 255);
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* || RESET */
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    
-    max-width: 700px;
-    margin: 0px auto;
-    border: 1px solid #333;
-    padding: 0px 20px;
+
+/* amking my images responsive */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-h1{
+
+input, 
+button, 
+textarea {
+    font: inherit;
+}
+
+/* ||VARIABLES */
+:root {
+    --FF: 'Nanito', san-serif;
+    --FF-HEADINGS: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* COLORS */
+    --BGCOLOR : orange;
+    --BGCOLOR-FADE: rgb(252, 220, 160);
+    --BGIMAGE: liner-gradient(to bottom, var(--BGIMAGE), va(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #fff;
+    --FONTCOLOR: #000;
+}
+
+/* ||UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -1000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
     text-align: center;
 }
-
-th,td,caption{
-    border: 1px solid #333;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: separate;
-    padding: 0.5rem;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(206, 117, 9);
-    
-}
-
-
