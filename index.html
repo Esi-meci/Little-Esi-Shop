@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Little Esi Shop </title>
+        <title>Little Esi Shop</title>
         <meta charset="UTF-8">
         <meta name="owner" content="Esi-Meci">
         <meta name="description" content="Little Esi😋 Shop">
         <meta name="viewport" content="width=device-width, initial-scale=1" >
         <link rel="shortcut icon" href="img/favico..jpg" type="jpg">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
     </head>
     <body>
         <header class="header">
-            <h1 class="header__h1">Little Esi😋 Shop</h1>
+            <h1 class="header__h1">Little Esi Shop</h1>
             <nav class="header__nav">
                 <ul class="header__ul">
                     <li><a href="#menu" title="menu">Menu</a></li>
@@ -29,59 +30,58 @@
             </figure>
         </section>
         <main class="main">
-            <article id="menu" class="main__article">
-                <h2 id="menu">Our Menu</h2> 
-                <table>
-                    <caption>Our Esi😋</caption>
+            <article id="menu" class="main__article menu">
+                <h2 id="menu" class="menu__h2">Our Menu</h2> 
+                <table class="menu__container">
+                    <caption class="offscreen">Our Esi😋</caption>
                     <thead>
                         <tr>
-                            <th>&nbsp;</th>
-                            <th scope="col" abbr="Quantity">Qty</th>
-                            <th scope="col">Price</th>
+                            <th class="menu__header" scope="col">Tacos</th>
+                            <th class="menu__header" scope="col">Quantity</th>
+                            <th class="menu__header" scope="col">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th rowspan="3" scope="row">Crunchy</th>
-                            <td>100gm</td>
-                            <td>₹40.00</td>
+                            <th class="menu__item menu__cr" rowspan="3" scope="row">Crunchy</th>
+                            <td class="menu__item">100gm</td>
+                            <td class="menu__item">₹40.00</td>
                         </tr>
                         <tr>
-                            <td>250gm</td>
-                            <td>₹100.00</td>
+                            <td class="menu__item">250gm</td>
+                            <td class="menu__item">₹100.00</td>
                         </tr>
                         <tr>
-                            <td>1 kg</td>
-                            <td>₹400.00</td>
+                            <td class="menu__item">1 kg</td>
+                            <td class="menu__item">₹400.00</td>
                         </tr>
                         <tr>
-                            <th rowspan="3" scope="row">Esi😋 with<br>Dahi</th>
-                            <td>100gm</td>
-                            <td>₹50.00</td>
+                            <th class="menu__item menu__sf" rowspan="3" scope="row">Soft</th>
+                            <td class="menu__item">100gm</td>
+                            <td class="menu__item">₹50.00</td>
                         </tr>
                         <tr>
-                            <td>250gm</td>
-                            <td>₹125.00</td>
+                            <td class="menu__item">250gm</td>
+                            <td class="menu__item">₹125.00</td>
                         </tr>
                         <tr>
-                            <td>1 kg</td>
-                            <td>₹500.00</td>
+                            <td class="menu__item">1 kg</td>
+                            <td class="menu__item">₹500.00</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3">Chips &amp; Salsa</td>
+                            <td class="menu__cs menu__item" colspan="3">Chips &amp; Salsa</td>
                         </tr>
                     </tfoot>                   
                 </table>
             </article>
-            <br>
-            <p><a href="#">Back on Top</a></p>
+            <p class="center"><a href="#">Back on Top</a></p>
         </main>
         <hr>
         <footer class="footer">   
             <p> 
-                <span class="nowrap"> Copyright &copy;</span> 
+                <span class="nowrap"> Copyright &copy; <time id="year"></time> </span> 
                 <span class="nowrap">Esi😋 Shop</span>
             </p>
         </footer>
